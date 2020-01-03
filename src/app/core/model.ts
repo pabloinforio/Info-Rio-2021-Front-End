@@ -16,3 +16,11 @@ export class Empresa {
     telefone_gertbempresa: string;
     celular_gertbempresa: string;
 }
+
+export class Grupo {
+    
+}
+
+export class Usuario {
+    
+}

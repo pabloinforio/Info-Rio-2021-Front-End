@@ -7,11 +7,16 @@ import { GerenciadorRoutingModule } from './gerenciador-routing.module';
 import { FormsModule } from '@angular/forms';
 // Dropdowns Component
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CadastroGrupoComponent } from './cadastro-grupo/cadastro-grupo.component';
+import { ConsultaGrupoComponent } from './consulta-grupo/consulta-grupo.component';
+import { ConsultaUsuarioComponent } from './consulta-usuario/consulta-usuario.component';
+import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 
 @NgModule({
   declarations: [
     CadastroEmpresaComponent, 
-    ConsultaEmpresaComponent 
+    ConsultaEmpresaComponent, 
+    CadastroGrupoComponent, ConsultaGrupoComponent, ConsultaUsuarioComponent, CadastroUsuarioComponent 
   ],
   imports: [
     CommonModule,

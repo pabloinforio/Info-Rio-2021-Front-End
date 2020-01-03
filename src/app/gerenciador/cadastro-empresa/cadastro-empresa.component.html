@@ -1,180 +1,180 @@
 <div>
-    <div class="row">
-      <div class="col-12">
-        <h2>Empresa</h2>
-      </div>
+  <div class="row">
+    <div class="col-12">
+      <h2>Empresa</h2>
     </div>
   </div>
+</div>
   
-  <form #f="ngForm" (ngSubmit)="salvar(f)"> 
-      <!-- (ngSubmit)="salvar(f)"> -->
-    <div class="row">
-      <div class="col-12">
-        <h4 class="mt-0">Dados Gerais</h4>
-      </div>
-      <!-- <div class="col-12" *ngIf="alert.mostrar">
-        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
-      </div> -->
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="razaosocial_gertbempresa">Razão Social</label>
-          <input type="text" class="form-control" name="razaosocial_gertbempresa" id="razaosocial_gertbempresa" autofocus           
-          [(ngModel)]="empresa.razaosocial_gertbempresa"
-          required/>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="nomefantasia_gertbempresa">Nome Fantasia</label>
-          <input type="text" class="form-control" name="nomefantasia_gertbempresa" id="nomefantasia_gertbempresa" autofocus 
-          [(ngModel)]="empresa.nomefantasia_gertbempresa"
-          
-          required/>
-        </div>
-      </div>
-
+<form #f="ngForm" (ngSubmit)="salvar(f)"> 
+    <!-- (ngSubmit)="salvar(f)"> -->
+  <div class="row">
+    <div class="col-12">
+      <h4 class="mt-0">Dados Gerais</h4>
     </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-4">
-        <div class="form-group">
-          <label class="control-label  info-required" for="nroinscricao_gertbempresa">CNPJ/CPF</label>
-          <input type="text" class="form-control" name="nroinscricao_gertbempresa" id="nroinscricao_gertbempresa" autofocus           
-          [(ngModel)]="empresa.nroinscricao_gertbempresa"
-          required/>
-        </div>
-      </div>      
-      <div class="col-12 col-sm-4">
-        <div class="form-group">
-          <label class="control-label  info-required" for="nroinscricaoestadual_gertbempresa">Inscrição Estadual</label>
-          <input type="text" class="form-control" name="nroinscricaoestadual_gertbempresa" id="nroinscricaoestadual_gertbempresa" autofocus           
-          [(ngModel)]="empresa.nroinscricaoestadual_gertbempresa"
-          required/>
-        </div>
-      </div>      
-      <div class="col-12 col-sm-4">
-        <div class="form-group">
-          <label class="control-label  info-required" for="nroinscricaomunicipial_gertbempresa">Inscrição Municipal</label>
-          <input type="text" class="form-control" name="nroinscricaomunicipial_gertbempresa" id="nroinscricaomunicipial_gertbempresa" autofocus           
-          [(ngModel)]="empresa.nroinscricaomunicipial_gertbempresa"
-          required/>
-        </div>
-      </div>      
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <h4 class="mt-0">Endereço</h4>
-      </div>
-      <div class="col-12 col-sm-3">
-        <div class="form-group">
-          <label class="control-label  info-required" for="cep_gertbempresa">CEP</label>
-          <input type="text" class="form-control" name="cep_gertbempresa" id="cep_gertbempresa" autofocus           
-          [(ngModel)]="empresa.cep_gertbempresa"
-          required/>
-        </div>
-      </div>      
-      <div class="col-12 col-sm-7">
-        <div class="form-group">
-          <label class="control-label  info-required" for="endereco_gertbempresa">Endereço</label>
-          <input type="text" class="form-control" name="endereco_gertbempresa" id="endereco_gertbempresa" autofocus           
-          [(ngModel)]="empresa.endereco_gertbempresa"
-          required/>
-        </div>
-      </div>      
-
-      <div class="col-12 col-sm-2">
-        <div class="form-group">
-          <label class="control-label  info-required" for="nro_gertbempresa">Número</label>
-          <input type="text" class="form-control" name="nro_gertbempresa" id="nro_gertbempresa" autofocus           
-          [(ngModel)]="empresa.nro_gertbempresa"
-          required/>
-        </div>
-      </div>      
-      
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="complemento_gertbempresa">Complemento</label>
-          <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
-          [(ngModel)]="empresa.complemento_gertbempresa"
-          required/>
-        </div>
-      </div>            
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="form-group">
-          <label class="control-label  info-required" for="bairro_gertbempresa">Bairro</label>
-          <input type="text" class="form-control" name="bairro_gertbempresa" id="bairro_gertbempresa" autofocus           
-          [(ngModel)]="empresa.bairro_gertbempresa"
-          required/>
-        </div>
-      </div>      
-
-      <div class="col-12 col-sm-2">
-        <div class="form-group">
-          <label class="control-label  info-required" for="complemento_gertbempresa">UF</label>
-          <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
-          [(ngModel)]="empresa.complemento_gertbempresa"
-          required/>
-        </div>
-      </div>   
-
-      <div class="col-12 col-sm-4">
-        <div class="form-group">
-          <label class="control-label  info-required" for="complemento_gertbempresa">Cidade</label>
-          <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
-          [(ngModel)]="empresa.complemento_gertbempresa"
-          required/>
-        </div>
-      </div>            
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <h4 class="mt-0">Contato</h4>
-      </div>
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="email_gertbempresa">Email</label>
-          <input type="text" class="form-control" name="email_gertbempresa" id="email_gertbempresa" autofocus           
-          [(ngModel)]="empresa.email_gertbempresa"
-          required/>
-        </div>
-      </div>      
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="form-group">
-          <label class="control-label  info-required" for="telefone_gertbempresa">Telefone</label>
-          <input type="text" class="form-control" name="telefone_gertbempresa" id="telefone_gertbempresa" autofocus           
-          [(ngModel)]="empresa.telefone_gertbempresa"
-          required/>
-        </div>
-      </div>      
-
-      <div class="col-12 col-sm-6">
-        <div class="form-group">
-          <label class="control-label  info-required" for="celular_gertbempresa">Celular</label>
-          <input type="text" class="form-control" name="celular_gertbempresa" id="celular_gertbempresa" autofocus           
-          [(ngModel)]="empresa.celular_gertbempresa"
-          required/>
-        </div>
-      </div>   
-    </div>
-
-
-    <div class="row  text-right">
-      <div class="col-12">
-        <a routerLink="/gerenciador/empresas" class="btn  btn-outline-primary  mr-2">Voltar</a>
-        <input type="submit" class="btn  btn-primary" value="Salvar"> 
-        <!-- [disabled]="f.invalid" -->
+    <!-- <div class="col-12" *ngIf="alert.mostrar">
+      <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+    </div> -->
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="razaosocial_gertbempresa">Razão Social</label>
+        <input type="text" class="form-control" name="razaosocial_gertbempresa" id="razaosocial_gertbempresa" autofocus           
+        [(ngModel)]="empresa.razaosocial_gertbempresa"
+        required/>
       </div>
     </div>
-  </form>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nomefantasia_gertbempresa">Nome Fantasia</label>
+        <input type="text" class="form-control" name="nomefantasia_gertbempresa" id="nomefantasia_gertbempresa" autofocus 
+        [(ngModel)]="empresa.nomefantasia_gertbempresa"
+        
+        required/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nroinscricao_gertbempresa">CNPJ/CPF</label>
+        <input type="text" class="form-control" name="nroinscricao_gertbempresa" id="nroinscricao_gertbempresa" autofocus           
+        [(ngModel)]="empresa.nroinscricao_gertbempresa"
+        required/>
+      </div>
+    </div>      
+    <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nroinscricaoestadual_gertbempresa">Inscrição Estadual</label>
+        <input type="text" class="form-control" name="nroinscricaoestadual_gertbempresa" id="nroinscricaoestadual_gertbempresa" autofocus           
+        [(ngModel)]="empresa.nroinscricaoestadual_gertbempresa"
+        required/>
+      </div>
+    </div>      
+    <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nroinscricaomunicipial_gertbempresa">Inscrição Municipal</label>
+        <input type="text" class="form-control" name="nroinscricaomunicipial_gertbempresa" id="nroinscricaomunicipial_gertbempresa" autofocus           
+        [(ngModel)]="empresa.nroinscricaomunicipial_gertbempresa"
+        required/>
+      </div>
+    </div>      
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h4 class="mt-0">Endereço</h4>
+    </div>
+    <div class="col-12 col-sm-3">
+      <div class="form-group">
+        <label class="control-label  info-required" for="cep_gertbempresa">CEP</label>
+        <input type="text" class="form-control" name="cep_gertbempresa" id="cep_gertbempresa" autofocus           
+        [(ngModel)]="empresa.cep_gertbempresa"
+        required/>
+      </div>
+    </div>      
+    <div class="col-12 col-sm-7">
+      <div class="form-group">
+        <label class="control-label  info-required" for="endereco_gertbempresa">Endereço</label>
+        <input type="text" class="form-control" name="endereco_gertbempresa" id="endereco_gertbempresa" autofocus           
+        [(ngModel)]="empresa.endereco_gertbempresa"
+        required/>
+      </div>
+    </div>      
+
+    <div class="col-12 col-sm-2">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nro_gertbempresa">Número</label>
+        <input type="text" class="form-control" name="nro_gertbempresa" id="nro_gertbempresa" autofocus           
+        [(ngModel)]="empresa.nro_gertbempresa"
+        required/>
+      </div>
+    </div>      
+    
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="complemento_gertbempresa">Complemento</label>
+        <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
+        [(ngModel)]="empresa.complemento_gertbempresa"
+        required/>
+      </div>
+    </div>            
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label class="control-label  info-required" for="bairro_gertbempresa">Bairro</label>
+        <input type="text" class="form-control" name="bairro_gertbempresa" id="bairro_gertbempresa" autofocus           
+        [(ngModel)]="empresa.bairro_gertbempresa"
+        required/>
+      </div>
+    </div>      
+
+    <div class="col-12 col-sm-2">
+      <div class="form-group">
+        <label class="control-label  info-required" for="complemento_gertbempresa">UF</label>
+        <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
+        [(ngModel)]="empresa.complemento_gertbempresa"
+        required/>
+      </div>
+    </div>   
+
+    <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label class="control-label  info-required" for="complemento_gertbempresa">Cidade</label>
+        <input type="text" class="form-control" name="complemento_gertbempresa" id="complemento_gertbempresa" autofocus           
+        [(ngModel)]="empresa.complemento_gertbempresa"
+        required/>
+      </div>
+    </div>            
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h4 class="mt-0">Contato</h4>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="email_gertbempresa">Email</label>
+        <input type="text" class="form-control" name="email_gertbempresa" id="email_gertbempresa" autofocus           
+        [(ngModel)]="empresa.email_gertbempresa"
+        required/>
+      </div>
+    </div>      
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label class="control-label  info-required" for="telefone_gertbempresa">Telefone</label>
+        <input type="text" class="form-control" name="telefone_gertbempresa" id="telefone_gertbempresa" autofocus           
+        [(ngModel)]="empresa.telefone_gertbempresa"
+        required/>
+      </div>
+    </div>      
+
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label class="control-label  info-required" for="celular_gertbempresa">Celular</label>
+        <input type="text" class="form-control" name="celular_gertbempresa" id="celular_gertbempresa" autofocus           
+        [(ngModel)]="empresa.celular_gertbempresa"
+        required/>
+      </div>
+    </div>   
+  </div>
+
+
+  <div class="row  text-right">
+    <div class="col-12">
+      <a routerLink="/gerenciador/empresas" class="btn  btn-outline-primary  mr-2">Voltar</a>
+      <input type="submit" class="btn  btn-primary" value="Salvar"> 
+      <!-- [disabled]="f.invalid" -->
+    </div>
+  </div>
+</form>

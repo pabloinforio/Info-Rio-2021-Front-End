@@ -1,0 +1,60 @@
+<div class="mb-6">
+    <div class="row">
+      <div class="col-12">
+        <h2>Pesquisa de grupos</h2>
+        <form autocomplete="off"  (ngSubmit)="pesquisar()">
+            <div class="form-group">
+              <label class="control-label" for="nome">Nome</label>
+              <input type="text" class="form-control" name="nome" id="nome"
+               />
+            </div>
+            <input type="submit" class="btn  btn-primary" value="Pesquisar">
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row  mt-5">
+    <div class="col-12">
+      <!-- <div *ngIf="alert.mostrar">
+          <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+      </div> -->
+      <table class="table  table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Url Conexão</th>
+            <th class="col-acoes"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let empresa of empresas">
+            <td >{{ grupo.nome_gertbgrupo }}</td>
+            <td >{{ grupo.urlconexao_gertbgrupo }}</td>
+             <!-- <td class="col-acoes">
+              <a [routerLink]="['/empresas', empresa.codigo]" class="btn  btn-primary  mr-2" placement="top" ngbTooltip="Editar"><fa-icon [icon]="faPen"></fa-icon></a>
+              <button class="btn  btn-primary" placement="top" ngbTooltip="Excluir" [disabled]="!auth.temPermissao('ROLE_EXCLUIR_empresa')" [swal]="deleteSwal" (confirm)="excluir(empresa)"><fa-icon [icon]="faTrash"></fa-icon></button>
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+      <!-- <ngb-pagination [boundaryLinks]=true [collectionSize]="totalElementos" [pageSize]="5" [(page)]="filtro.paginaAtual" (pageChange)="loadPage($event)"></ngb-pagination> -->
+    </div>
+    <div class="col-12"> 
+        <a routerLink="/gerenciador/grupos/nova" class="btn  btn-primary">
+            <!-- <fa-icon [icon]="faPlus"></fa-icon>  -->
+            Nova</a>
+    </div>
+  </div>
+  
+<!--   
+  <swal
+    #deleteSwal
+    title="empresa"
+    text="Deseja realmente excluir?"
+    type="question"
+    confirmButtonText="Sim"
+    cancelButtonText="Cancelar"
+    [showCancelButton]="true"
+    [focusCancel]="true">
+  </swal> -->

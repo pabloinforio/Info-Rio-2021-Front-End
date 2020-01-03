@@ -1,0 +1,43 @@
+<div>
+  <div class="row">
+    <div class="col-12">
+      <h2>Grupo</h2>
+    </div>
+  </div>
+</div>
+  
+<form #f="ngForm" (ngSubmit)="salvar(f)"> 
+    <!-- (ngSubmit)="salvar(f)"> -->
+  <div class="row">
+    <!-- <div class="col-12" *ngIf="alert.mostrar">
+      <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+    </div> -->
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="nome_gertbgrupo">Nome</label>
+        <input type="text" class="form-control" name="nome_gertbgrupo" id="nome_gertbgrupo" autofocus           
+        [(ngModel)]="grupo.nome_gertbgrupo"
+        required/>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label class="control-label  info-required" for="urlconexao_gertbgrupo">Url Conexão</label>
+        <input type="text" class="form-control" name="urlconexao_gertbgrupo" id="urlconexao_gertbgrupo" autofocus 
+        [(ngModel)]="grupo.urlconexao_gertbgrupo"
+        
+        required/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row  text-right">
+    <div class="col-12">
+      <a routerLink="/gerenciador/grupos" class="btn  btn-outline-primary  mr-2">Voltar</a>
+      <input type="submit" class="btn  btn-primary" value="Salvar"> 
+      <!-- [disabled]="f.invalid" -->
+    </div>
+  </div>
+</form>

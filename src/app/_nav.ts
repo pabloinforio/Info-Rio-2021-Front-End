@@ -37,6 +37,16 @@ export const navItems: INavData[] = [
         name: 'Empresas',
         url: '/gerenciador/empresas',
         icon: 'icon-puzzle'
+      },
+      {
+        name: 'Grupos',
+        url: '/gerenciador/grupos',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'Usuários',
+        url: '/gerenciador/usuarios',
+        icon: 'icon-puzzle'
       }
     ]
   },

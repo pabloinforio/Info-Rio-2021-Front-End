@@ -1,0 +1,59 @@
+<div>
+    <div class="row">
+        <div class="col-12">
+        <h2>Usuário</h2>
+        </div>
+    </div>
+</div>
+    
+<form #f="ngForm" (ngSubmit)="salvar(f)"> 
+      <!-- (ngSubmit)="salvar(f)"> -->
+    <div class="row">
+      <!-- <div class="col-12" *ngIf="alert.mostrar">
+        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+      </div> -->
+      <div class="col-12">
+        <div class="form-group">
+          <label class="control-label  info-required" for="email_gerbusu">E-mail</label>
+          <input type="text" class="form-control" name="email_gerbusu" id="email_gerbusu" autofocus           
+          [(ngModel)]="usuario.email_gerbusu"
+          required/>
+        </div>
+      </div>
+  
+      <div class="col-12">
+        <div class="form-group">
+          <label class="control-label  info-required" for="senha_gerbusu">Senha</label>
+          <input type="text" class="form-control" name="senha_gerbusu" id="senha_gerbusu" autofocus 
+          [(ngModel)]="usuario.senha_gerbusu"
+          
+          required/>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!-- <div class="col-12" *ngIf="alert.mostrar">
+        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+      </div> -->
+      <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ativo_gertbusu" id="ativo_gertbusu"
+            [(ngModel)]="usuario.ativo_gerbusu"          
+            required/>
+            <label class="form-check-label" for="ativo_gertbusu">
+            Ativo
+            </label>
+        </div>    
+      </div>
+    </div>
+  
+    <div class="row  text-right">
+      <div class="col-12">
+        <a routerLink="/gerenciador/usuarios" class="btn  btn-outline-primary  mr-2">Voltar</a>
+        <input type="submit" class="btn  btn-primary" value="Salvar"> 
+        <!-- [disabled]="f.invalid" -->
+      </div>
+    </div>
+</form>

@@ -4,6 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 // import { AuthGuard } from './../seguranca/auth.guard';
 import { ConsultaEmpresaComponent } from './consulta-empresa/consulta-empresa.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
+import { CadastroGrupoComponent } from './cadastro-grupo/cadastro-grupo.component';
+import { ConsultaGrupoComponent } from './consulta-grupo/consulta-grupo.component';
+import { ConsultaUsuarioComponent } from './consulta-usuario/consulta-usuario.component';
+import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 
 
 const routes: Routes = [
@@ -29,6 +33,34 @@ const routes: Routes = [
         component: CadastroEmpresaComponent,
         data: {
           title: 'Cadastro empresa'
+        }
+      },
+      {
+        path: 'grupos',
+        component: ConsultaGrupoComponent,
+        data: {
+          title: 'Consultar grupos'
+        }
+      },
+      {
+        path: 'grupos/nova',
+        component: CadastroGrupoComponent,
+        data: {
+          title: 'Cadastro grupo'
+        }
+      },
+      {
+        path: 'usuarios',
+        component: ConsultaUsuarioComponent,
+        data: {
+          title: 'Usuários'
+        }
+      },
+      {
+        path: 'usuarios/nova',
+        component: CadastroUsuarioComponent,
+        data: {
+          title: 'Cadastro usuário'
         }
       },
       // {
