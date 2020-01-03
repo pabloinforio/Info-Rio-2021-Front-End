@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Grupo } from '../../core/model';
+import { Grupo } from '../core/model';
 
 @Component({
   selector: 'app-cadastro-grupo',

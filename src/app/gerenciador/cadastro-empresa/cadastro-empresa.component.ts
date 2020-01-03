@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Empresa } from '../../core/model';
+import { Empresa } from '../core/model';
 
 @Component({
   selector: 'app-cadastro-empresa',
