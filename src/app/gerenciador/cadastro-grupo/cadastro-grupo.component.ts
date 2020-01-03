@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Grupo } from '../core/model';
+import { Gertbgrupo } from '../core/model';
 
 @Component({
   selector: 'app-cadastro-grupo',
@@ -7,7 +7,7 @@ import { Grupo } from '../core/model';
   styleUrls: ['./cadastro-grupo.component.css']
 })
 export class CadastroGrupoComponent implements OnInit {
-  grupo = new Grupo();
+  grupo = new Gertbgrupo();
 
   constructor() { }
 
