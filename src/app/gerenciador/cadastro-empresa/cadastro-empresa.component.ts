@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Empresa } from '../../core/model';
+import { Gertbempresa } from '../core/model';
 
 @Component({
   selector: 'app-cadastro-empresa',
@@ -7,7 +7,7 @@ import { Empresa } from '../../core/model';
   styleUrls: ['./cadastro-empresa.component.scss']
 })
 export class CadastroEmpresaComponent implements OnInit {
-  empresa = new Empresa();
+  empresa = new Gertbempresa();
 
   constructor() { }
 
