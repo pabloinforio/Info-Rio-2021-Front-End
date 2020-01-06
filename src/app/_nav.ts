@@ -31,12 +31,12 @@ export const navItems: INavData[] = [
   {
     name: 'Gerenciador',
     url: '/gerenciador',
-    icon: 'icon-puzzle',
+    icon: 'fa fa-gears',
     children: [
       {
         name: 'Empresas',
         url: '/gerenciador/empresas',
-        icon: 'icon-puzzle'
+        icon: 'fa fa-building'
       },
       {
         name: 'Grupos',
@@ -46,7 +46,7 @@ export const navItems: INavData[] = [
       {
         name: 'Usuários',
         url: '/gerenciador/usuarios',
-        icon: 'icon-puzzle'
+        icon: 'fa fa-user'
       }
     ]
   },
