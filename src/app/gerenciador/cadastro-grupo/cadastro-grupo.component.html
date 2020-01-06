@@ -1,43 +1,44 @@
-<div>
-  <div class="row">
-    <div class="col-12">
-      <h2>Grupo</h2>
+<div class="animated fadeIn">
+  <div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Grupo</h2>
+      </div>
     </div>
   </div>
+    
+  <form #f="ngForm" (ngSubmit)="salvar(f)"> 
+    <div class="row">
+      <!-- <div class="col-12" *ngIf="alert.mostrar">
+        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+      </div> -->
+      <div class="col-12">
+        <div class="form-group">
+          <label class="control-label  info-required" for="nome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" autofocus           
+          [(ngModel)]="grupo.nome"
+          required/>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-group">
+          <label class="control-label  info-required" for="urlconexao">Url Conexão</label>
+          <input type="text" class="form-control" name="urlconexao" id="urlconexao" autofocus 
+          [(ngModel)]="grupo.urlconexao"
+          
+          required/>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row  text-right">
+      <div class="col-12">
+        <a routerLink="/gerenciador/grupos" class="btn  btn-outline-primary  mr-2">Voltar</a>
+        <input type="submit" class="btn  btn-primary" value="Salvar"> 
+        <!-- [disabled]="f.invalid" -->
+      </div>
+    </div>
+  </form>
 </div>
-  
-<form #f="ngForm" (ngSubmit)="salvar(f)"> 
-    <!-- (ngSubmit)="salvar(f)"> -->
-  <div class="row">
-    <!-- <div class="col-12" *ngIf="alert.mostrar">
-      <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
-    </div> -->
-    <div class="col-12">
-      <div class="form-group">
-        <label class="control-label  info-required" for="gertbgrupo_nome">Nome</label>
-        <input type="text" class="form-control" name="gertbgrupo_nome" id="gertbgrupo_nome" autofocus           
-        [(ngModel)]="grupo.gertbgrupo_nome"
-        required/>
-      </div>
-    </div>
-
-    <div class="col-12">
-      <div class="form-group">
-        <label class="control-label  info-required" for="gertbgrupo_urlconexao">Url Conexão</label>
-        <input type="text" class="form-control" name="gertbgrupo_urlconexao" id="gertbgrupo_urlconexao" autofocus 
-        [(ngModel)]="grupo.gertbgrupo_urlconexao"
-        
-        required/>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row  text-right">
-    <div class="col-12">
-      <a routerLink="/gerenciador/grupos" class="btn  btn-outline-primary  mr-2">Voltar</a>
-      <input type="submit" class="btn  btn-primary" value="Salvar"> 
-      <!-- [disabled]="f.invalid" -->
-    </div>
-  </div>
-</form>

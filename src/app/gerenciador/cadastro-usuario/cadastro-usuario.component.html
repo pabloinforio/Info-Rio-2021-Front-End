@@ -1,59 +1,60 @@
-<div>
-    <div class="row">
+<div class="animated fadeIn">
+  <div>
+      <div class="row">
+          <div class="col-12">
+          <h2>Usuário</h2>
+          </div>
+      </div>
+  </div>
+      
+  <form #f="ngForm" (ngSubmit)="salvar(f)"> 
+      <div class="row">
+        <!-- <div class="col-12" *ngIf="alert.mostrar">
+          <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+        </div> -->
         <div class="col-12">
-        <h2>Usuário</h2>
-        </div>
-    </div>
-</div>
-    
-<form #f="ngForm" (ngSubmit)="salvar(f)"> 
-      <!-- (ngSubmit)="salvar(f)"> -->
-    <div class="row">
-      <!-- <div class="col-12" *ngIf="alert.mostrar">
-        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
-      </div> -->
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="gertbusu_email">E-mail</label>
-          <input type="text" class="form-control" name="gertbusu_email" id="gertbusu_email" autofocus           
-          [(ngModel)]="usuario.gertbusu_email"
-          required/>
-        </div>
-      </div>
-  
-      <div class="col-12">
-        <div class="form-group">
-          <label class="control-label  info-required" for="gertbusu_senha">Senha</label>
-          <input type="text" class="form-control" name="gertbusu_senha" id="gertbusu_senha" autofocus 
-          [(ngModel)]="usuario.gertbusu_senha"
-          
-          required/>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <!-- <div class="col-12" *ngIf="alert.mostrar">
-        <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
-      </div> -->
-      <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="gertbusu_ativo" id="gertbusu_ativo"
-            [(ngModel)]="usuario.gertbusu_ativo"          
+          <div class="form-group">
+            <label class="control-label  info-required" for="email">E-mail</label>
+            <input type="text" class="form-control" name="email" id="email" autofocus           
+            [(ngModel)]="usuario.email"
             required/>
-            <label class="form-check-label" for="gertbusu_ativo">
-            Ativo
-            </label>
-        </div>    
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="form-group">
+            <label class="control-label  info-required" for="senha">Senha</label>
+            <input type="text" class="form-control" name="senha" id="senha" autofocus 
+            [(ngModel)]="usuario.senha"
+            
+            required/>
+          </div>
+        </div>
       </div>
-    </div>
-  
-    <div class="row  text-right">
-      <div class="col-12">
-        <a routerLink="/gerenciador/usuarios" class="btn  btn-outline-primary  mr-2">Voltar</a>
-        <input type="submit" class="btn  btn-primary" value="Salvar"> 
-        <!-- [disabled]="f.invalid" -->
+
+
+      <div class="row">
+        <!-- <div class="col-12" *ngIf="alert.mostrar">
+          <ngb-alert [type]="alert.type" (close)="closeAlert()">{{ alert.mensagem }} </ngb-alert>
+        </div> -->
+        <div class="col-12">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="ativo" id="ativo"
+              [(ngModel)]="usuario.ativo"          
+              required/>
+              <label class="form-check-label" for="ativo">
+              Ativo
+              </label>
+          </div>    
+        </div>
       </div>
-    </div>
-</form>
+    
+      <div class="row  text-right">
+        <div class="col-12">
+          <a routerLink="/gerenciador/usuarios" class="btn  btn-outline-primary  mr-2">Voltar</a>
+          <input type="submit" class="btn  btn-primary" value="Salvar"> 
+          <!-- [disabled]="f.invalid" -->
+        </div>
+      </div>
+  </form>
+</div>

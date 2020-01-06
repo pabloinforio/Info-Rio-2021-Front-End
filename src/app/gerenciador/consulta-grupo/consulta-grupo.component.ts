@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Grupo } from '../core/model';
 
 @Component({
   selector: 'app-consulta-grupo',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulta-grupo.component.css']
 })
 export class ConsultaGrupoComponent implements OnInit {
+  grupo = new Grupo;
 
   constructor() { }
 

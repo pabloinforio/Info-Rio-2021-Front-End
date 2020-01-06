@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Gertbusuario } from '../core/model';
+import { Usuario } from '../core/model';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -7,7 +7,7 @@ import { Gertbusuario } from '../core/model';
   styleUrls: ['./cadastro-usuario.component.css']
 })
 export class CadastroUsuarioComponent implements OnInit {
-  usuario = new Gertbusuario();
+  usuario = new Usuario();
 
   constructor() { }
 

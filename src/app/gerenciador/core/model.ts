@@ -1,11 +1,11 @@
-export class Gertbempresa {
+export class Empresa {
 
 }
 
-export class Gertbgrupo {
+export class Grupo {
     
 }
 
-export class Gertbusuario {
+export class Usuario {
     
 }

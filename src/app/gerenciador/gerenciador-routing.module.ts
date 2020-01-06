@@ -29,7 +29,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'empresas/nova',
+        path: 'empresas/adiciona',
         component: CadastroEmpresaComponent,
         data: {
           title: 'Cadastro empresa'
@@ -43,7 +43,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'grupos/nova',
+        path: 'grupos/adiciona',
         component: CadastroGrupoComponent,
         data: {
           title: 'Cadastro grupo'
@@ -57,7 +57,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'usuarios/nova',
+        path: 'usuarios/adiciona',
         component: CadastroUsuarioComponent,
         data: {
           title: 'Cadastro usuário'

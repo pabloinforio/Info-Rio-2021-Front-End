@@ -16,13 +16,16 @@ import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.co
   declarations: [
     CadastroEmpresaComponent, 
     ConsultaEmpresaComponent, 
-    CadastroGrupoComponent, ConsultaGrupoComponent, ConsultaUsuarioComponent, CadastroUsuarioComponent 
+    CadastroGrupoComponent, 
+    ConsultaGrupoComponent, 
+    ConsultaUsuarioComponent, 
+    CadastroUsuarioComponent 
   ],
   imports: [
     CommonModule,
     FormsModule,
     GerenciadorRoutingModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
   ]
 })
 export class GerenciadorModule { }
