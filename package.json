@@ -42,7 +42,7 @@
     "@coreui/icons": "0.3.0",
     "@fortawesome/angular-fontawesome": "^0.5.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.9.2",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.11",
     "flag-icon-css": "^3.4.5",
     "font-awesome": "^4.7.0",
